@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Programming Language Suggester</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="intro">
+        <h1>Programming Language suggester</h1>
+          <h3>Are you a person who would like to learn a computer programmig language, but don't know which language is a good start?</h3>
+          <h3>Setting a right direction for studying is important. It is always great to know what you want before making plans.</h3>
+          <h3>I will help you find setting goals from scratch!</h3>
+          <h3>You will be given survery that consists of few qeustions. Based on answers that you choosed, I will provide programmig language suggestion.</h3>
+
+          <button type="submit" class="btn">Start survery</button>
+      </div>
+        <div id="survey">
+          <p>1. Please tell me your name</p>
+          Name:
+          <input type="text" id="name" name="name">
+
+          <p>2. Do you have a computer background?(Degrees, experiences, slef-study, etc.)
+          <div class="radio">
+            <label>
+              <input type="radio" name='background' value="yes">
+              Yes
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name='background' value="no">
+              No
+            </label>
+          </div>
+
+         <p>3. Which words the most interesting to you?</p>
+         <div class="radio">
+           <label>
+             <input type="radio" name="field" value="sql1">
+             Data analyst, Database Engineer, Business analyst
+           </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="field" value="python1">
+            Software engineer, Data Scientist, AI
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="field" value="javascript1">
+            Front-end developer, Full-stack developer, UX/UI developer
+          </label>
+        </div>
+
+        <p>4. Please select if your answer is 'yes'.
+        <div class="radio">
+          <label>
+            <input type="radio" name="data" value="sql2">
+            Do you have access to a relational database?
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="data" value="python2">
+            Do you need to access, interpret, manipulate, and move data?
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="data" value="javascript2">
+            Do you need to track website analytics?
+          </label>
+        </div>
+
+        <p>5. Can you focus on learning more than 6 months?
+          <div class="radio">
+            <label>
+              <input type="radio" name="duration" value="long">
+                Yes
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name='duration' value="short">
+              No
+            </label>
+          </div>
+        </div>
+
+        <div id="result-sql">
+          <h1>Learn SQL</h1>
+          <img src="img/sql.jpg" alt="sql">
+          <p>Not everybody is working in an environment that they can use a data warehousefor analysis, so if you are you find yourself repeatedly exporting lists from marketing or e-commerce or applications asking IT, a DBA, or engineers to get data out of a database or data warehouse for your analysis, hurry up and learn SQL!</p>
+          <p>I recommend Duke's SQL class on Coursera to go from zero to usable SQL skill in a less than two months. With that class and a couple books about PostgreSQL, you can learn enough to record this this demo with ad network data https://www.youtube.com/watch?v=FvVzxUffrlw.</p>
+        </div>
+        <div id="result-python">
+          <h1>Learn Python</h1>
+          <img src="img/python.png" alt="python">
+          <p>It is straightforward to learn and provides a great foundation for learning ANY programmig language. You can use it to access and interact with API's which can substantially increase the scale of your marketing activities For instance, Facebook has an API for Facebook ads what allows you to create and manage campaigns programmatically.</p>
+          <p>But you will find that you have to learn more than just the basics to do anything that interesting. Python runs on your computer or a server, so you have to learn how to run the code on top of how to write the code. </p>
+          <p>If you are ready to set your mind to it and head down that path, I recommend starting with Udacity's Introduction to Python Programming, it is perfect for digital marketers because it introduces the concept of, and teaches you to build a very simple web crawler. After that, Coursera's Data Manipulation at Scale: System and Algorithms shows you how to do Tweet by accessing the Twitter API with Python.</p>
+          <p>When you want to try some practical stuff, check out Automate the Boring Stuff for interesting projects you can do on your computer, or Python Anywhere or AWS Lambra to get started running Python in the cloud!</p>
+          <p>The quickest way to apply Python toward digital marketing is to use JuPyteR for data analysis, but that still has a bit of a learning curve so beware. Python for Data Analysis is a great way to get started in that direction.</p>
+        </div>
+        <div id="result-javascript">
+          <h1>Learn Javascript</h1>
+          <img src="img/javascript.jpg" alt="javascript">
+          <p>While Javascript can be used to make a lot of interesting web apps, it can also be useful within a few weeks if you want to set up or enhance Google Analytics on a website</p>
+          <p>Most CMS's make it pretty easy to edit at least some Javascript code, and Google Tag Manager makes it possible to insert Javascript code for tracking. Javascript is also how A/B testing tools like Optimizely and Google Optimize change the layout of a webpage. If you run a Google Ads account, you can even use Javascript to update and maintain your ads programmatically. Did you know Google Apps Script uses Javascript?</p>
+          <p>Just because it might be easier to start seeing the benefits of learning to code with Javascript does not mean it is an easier language to learn in general. Between callbacks, Javascript's version of Object Oriented Programming, and the zillions of libraries, versions, and frameworks, there can be some rough patches, but sticking with it will help you understand how the browsers and the web work. That will completely change your world!</p>
+        </div>
+
+  </body>
+</html>
