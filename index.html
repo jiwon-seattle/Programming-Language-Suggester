@@ -8,7 +8,7 @@
     <title>Programming Language Suggester</title>
   </head>
   <body>
-    <div class="container">
+      <div class="jumbotron">
       <div id="intro">
         <h1>Programming Language suggester</h1>
           <h3>Are you a person who would like to learn a computer programmig language, but don't know which language is a good start?</h3>
@@ -16,9 +16,13 @@
           <h3>I will help you find setting goals from scratch!</h3>
           <h3>You will be given survery that consists of few qeustions. Based on answers that you choosed, I will provide programmig language suggestion.</h3>
 
-          <button type="submit" class="btn">Start survery</button>
+          <button type="submit" class="btn" id="start">Start survery</button>
       </div>
+      </div>
+      <div class="container">
+      <form id="language">
         <div id="survey">
+          <img src="img/programmer.png" alt="language" id="lan">
           <p>1. Please tell me your name</p>
           Name:
           <input type="text" id="name" name="name">
@@ -77,7 +81,7 @@
           </label>
         </div>
 
-        <p>5. Can you focus on learning more than 6 months?
+        <p>5. Can you focus on learning more than at least 6 months?</p>
           <div class="radio">
             <label>
               <input type="radio" name="duration" value="long">
@@ -91,7 +95,18 @@
             </label>
           </div>
         </div>
-
+        <button type="submit" class="btn" id="sub">Submit</button>
+      </form>
+        <br>
+        <div id="result-intro">
+          <p>Thank you for completing the survery, <strong><span id="you"></span></strong>!</p>
+          <p>Below is the result. Hope it can help your career build in the future. :) </p>
+        </div>
+        <br>
+        <div id="result-long">
+          <p>If you can focus on learning for a long term, I would recommend you to study more than one language. From the survery, it would be great to study <strong><span id="result-language"></span></strong>, however, the other two languages are promising too.
+            Read the information of the languages, and consider what are the best for you.</p>
+        </div>
         <div id="result-sql">
           <h1>Learn SQL</h1>
           <img src="img/sql.jpg" alt="sql">
@@ -114,6 +129,6 @@
           <p>Most CMS's make it pretty easy to edit at least some Javascript code, and Google Tag Manager makes it possible to insert Javascript code for tracking. Javascript is also how A/B testing tools like Optimizely and Google Optimize change the layout of a webpage. If you run a Google Ads account, you can even use Javascript to update and maintain your ads programmatically. Did you know Google Apps Script uses Javascript?</p>
           <p>Just because it might be easier to start seeing the benefits of learning to code with Javascript does not mean it is an easier language to learn in general. Between callbacks, Javascript's version of Object Oriented Programming, and the zillions of libraries, versions, and frameworks, there can be some rough patches, but sticking with it will help you understand how the browsers and the web work. That will completely change your world!</p>
         </div>
-
+      </div>
   </body>
 </html>
