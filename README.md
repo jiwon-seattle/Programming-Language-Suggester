@@ -26,7 +26,7 @@ Please contact to Jiwon Han if you run into any issues or have questions, ideas 
 
 * HTML.
 * CSS.
-* Bootstrap.
+* Bootstrap
 * Javascript
 
 ### License
