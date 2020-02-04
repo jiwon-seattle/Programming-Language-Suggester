@@ -7,7 +7,7 @@
 This web page represents programming language suggester. User will experience taking survey and be recommended the language based on the survey.
 
 ## Clone 
-Clone this repo to your local machine using https://github.com/jiwon-seattle/Second-project-at-Epicodus.
+Clone this repo to your local machine using https://github.com/jiwon-seattle/Programming-Language-Suggester.git.
 
 ## Setup/Installation Requirements
 
