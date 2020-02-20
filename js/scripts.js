@@ -2,8 +2,8 @@
 $(document).ready(function() {
   $("button#start").click(function(event){
     $("form#language").show();
-  })
-})
+  });
+});
 
 $(document).ready(function() {
   $("form#language").submit(function(event) {
@@ -37,7 +37,7 @@ $(document).ready(function() {
     }
 
     var nameInput = $("input#name").val();
-    $("#you").text(nameInput)
+    $("#you").text(nameInput);
 
     $("#output").show();
     $("#ramen").text(result);
