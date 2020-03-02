@@ -24,8 +24,8 @@ Please contact to Jiwon Han if you run into any issues or have questions, ideas 
 
 ## Technologies Used
 
-* HTML.
-* CSS.
+* HTML
+* CSS
 * Bootstrap
 * Javascript
 
